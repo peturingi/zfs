@@ -84,7 +84,7 @@
 .Ar filesystem
 .Ar filesystem
 .Xc
-Renames the given dataset.
+Renames the given filesystem, snapshot or volume.
 The new target can be located anywhere in the ZFS hierarchy, with the exception
 of snapshots.
 Snapshots can only be renamed within the parent file system or volume.
@@ -123,8 +123,7 @@ the file system is not unmounted even if this option is not given.
 .Fl r
 .Ar snapshot Ar snapshot
 .Xc
-Recursively rename the snapshots of all descendent datasets.
-Snapshots are the only dataset that can be renamed recursively.
+Recursively rename the snapshots of all descendent snapshots.
 .El
 .
 .Sh EXAMPLES
